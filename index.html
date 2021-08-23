@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Forms-Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <div class="container" style="background-color: blue;">
+        <div class="w-80">
+            <div class="border border-5"style="background-color: yellow;">
+    <h3 style="text-align: center;font-size: 32px; font-family: sans-serif; color: red;">
+       <b> COURSE REGISTRATION FORM</b>
+    </h3><br>
+    </div>
+    <form style=" color: white; font-size: 22px; margin-left: 20px; margin-right: 20px;">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group ">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Enter your First Name">
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Enter your Last Name">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="rollno">Register No</label>
+                <input type="text" class="form-control" id="rollno" placeholder="Enter your Register Number">
+            </div>
+            <div class="col-md-6">
+                <label for="dob">Date Of Birth</label>
+                <input type="date" class="form-control" id="dob" placeholder="Enter your Date Of Birth">
+            </div>
+        </div>
+        <label for="gender">Gender :-</label>
+        <div class="form-check">
+            <label class="radio-inline">
+                <input type="radio" name="flexRadioDefault1">
+                Male
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="flexRadioDefault1">
+                Female
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="flexRadioDefault1">
+                Others
+            </label>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="email">E-Mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="aruna@gmail.com">
+                </div>
+                <div class="col">
+                    <label for="phone">Contact No</label>
+                    <input type="number" class="form-control" id="phone" placeholder="Enter your contact number">
+                </div>
+            </div>
+        <label for="Completed courses">Completed courses:-</label>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check1">
+            <label class="form-check-label" for="check1">
+                Python
+            </label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check2">
+            <label class="form-check-label" for="check2">
+                Java
+            </label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check3">
+            <label class="form-check-label" for="check3">
+                C 
+            </label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="check4">
+            <label class="form-check-label" for="check4">
+                C++
+            </label>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <label for="dept">Department</label>
+                <select class="form-control" id="sel">
+                    <option>--Select your department--</option>
+                    <option>Information Technology</option>
+                    <option>Computer secience and Engineering</option>
+                    <option>Electrical and Electronic</option>
+                    <option>Electrical and Communication</option>
+                    <option>Food Technology</option>
+                    <option>Chemical Engineering</option>
+                    <option>Mechanical Engineering</option>
+        </select>
+            </div>
+            <div class="col-md-6">
+                <label for="section">Section</label>
+                <input type="text" class="form-control" id="section" placeholder="Enter your section">
+            </div>
+        </div>
+        <label for="sel">Select Course</label>
+        <select class="form-control" id="sel">
+            <option>--Please Select--</option>
+            <option>Introducion to AWS</option>
+            <option>Go Programming</option>
+            <option>Image Processing</option>
+            <option>R Programming</option>
+            <option>Data science</option>
+            <option>Artificial Intelligence</option>
+            <option>Machine Learning</option>
+        </select>
+        
+        <label for="feedback">FeedBack</label>
+        <textarea class="form-control" rows="3" id="feedback" placeholder="Add Your feedbacks or doubts here">
+            </textarea>
+        </div><br>
+        <div class=row>
+            <div class="col">
+        <button type="submit" value="10" class="btn btn-default bg-dark text-white px-4 ml-3">Submit</button>
+        </div>
+        <div class="col">
+            <button type="reset" value="10" class="btn btn-default bg-danger text-white px-4 ml-3">Reset</button>
+        </div>
+        </div>
+    </form>
+    </div>
+    </div><br>
+  </body>
+</html>
